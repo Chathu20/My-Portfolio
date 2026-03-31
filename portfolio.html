@@ -109,21 +109,34 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
                  <!-- Lightbox links -->
+<!-- Portfolio links with full-screen lightbox -->
 <div class="portfolio-links">
-  <a href="assets/img/portfolio/Library Managment System.jpeg" class="portfolio-details-lightbox" data-glightbox="type: external" title="Library Management System"><i class="bx bx-link"></i></a>
-  <a href="assets/img/portfolio/Login.jpeg" class="portfolio-details-lightbox" data-glightbox="type: external" title="Login Page"><i class="bx bx-link"></i></a>
-  <a href="assets/img/portfolio/Dashboard.jpeg" class="portfolio-details-lightbox" data-glightbox="type: external" title="Dashboard"><i class="bx bx-link"></i></a>
+  <a href="assets/img/portfolio/Library Managment System.jpeg" class="portfolio-details-lightbox" data-glightbox="type: image" title="Library Management System"><i class="bx bx-link"></i></a>
+  <a href="assets/img/portfolio/Login.jpeg" class="portfolio-details-lightbox" data-glightbox="type: image" title="Login Page"><i class="bx bx-link"></i></a>
+  <a href="assets/img/portfolio/Dashboard.jpeg" class="portfolio-details-lightbox" data-glightbox="type: image" title="Dashboard"><i class="bx bx-link"></i></a>
 </div>
 
-<!-- CSS for full-screen image -->
+<!-- GLightbox Initialization -->
+<script>
+  const lightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    openEffect: 'fade',
+    closeEffect: 'fade',
+    zoomable: true,
+    width: '100%',
+    height: '100%',
+    loop: true,
+  });
+</script>
+
+<!-- Optional CSS to make images fit full-screen nicely -->
 <style>
 .glightbox-container img {
-    width: 100vw;  /* viewport width */
-    height: 100vh; /* viewport height */
-    object-fit: contain; /* preserve aspect ratio */
+  width: 100vw;       /* full viewport width */
+  height: 100vh;      /* full viewport height */
+  object-fit: contain; /* preserve aspect ratio, no stretching */
 }
-</style>
-              </div>
+</style>  </div>
             </div>
           </div>
 
