@@ -64,75 +64,64 @@
 
   <main id="main">
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+    <div class="row mt-5">
 
-        <div class="section-title">
-          <h2>Contact</h2>
+  <!-- Contact Details Column -->
+  <div class="col-lg-4">
+    <div class="info-box p-4 mb-3 shadow-sm rounded">
+      <i class="bi bi-geo-alt"></i>
+      <h4>Location</h4>
+      <p>Kaluarachchiyagama, Andiyagala</p>
+    </div>
+
+    <div class="info-box p-4 mb-3 shadow-sm rounded">
+      <i class="bi bi-envelope"></i>
+      <h4>Email</h4>
+      <p>sandunichathurangi18@gmail.com</p>
+    </div>
+
+    <div class="info-box p-4 mb-3 shadow-sm rounded">
+      <i class="bi bi-phone"></i>
+      <h4>Call</h4>
+      <p>+94 762219874</p>
+    </div>
+
+    <div class="info-box p-4 mb-3 shadow-sm rounded">
+      <i class="bx bx-share-alt"></i>
+      <h4>Social Profiles</h4>
+      <div class="d-flex gap-2">
+        <a href="https://x.com/chathu1022" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010700323547" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/disura_sandaruwan/" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/disura-sandaruwan-649a422b8/" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Disura1" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-github"></i></a>
+        <a href="https://wa.me/+94702658840" target="_blank" class="btn btn-outline-success btn-sm"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Column -->
+  <div class="col-lg-8 mt-5 mt-lg-0">
+    <form id="contactForm" action="forms/contact.php" method="post" role="form" class="php-email-form p-4 shadow-sm rounded">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
         </div>
-
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Kaluarachchiyagama, Andiyagala</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>sandunichathurangi18@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+94 762219874</p>
-              </div>
-
-              <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://x.com/chathu1022" target="_blank" class="twitter" target="_blank" class="twitter" title="Twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/profile.php?id=100010700323547" target="_blank" class="facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/disura_sandaruwan/" target="_blank" class="instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/disura-sandaruwan-649a422b8/" target="_blank" class="linkedin" title="Linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/Disura1" target="_blank" class="github" title="Github"><i class="bi bi-github"></i></a>
-              <a href="https://wa.me/+94702658840" target="_blank" class="whatsapp" title="Whatsapp"><i class="bi bi-whatsapp"></i></a>
-              
-          </div>
+        <div class="col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
         </div>
-            </div>
+      </div>
+      <div class="form-group mt-3">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+      </div>
+      <div class="text-center mt-3"><button type="submit" class="btn btn-primary">Send Message</button></div>
+    </form>
+  </div>
 
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form id="contactForm" action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+</div>
 
             <script>
               document.getElementById('contactForm').addEventListener('submit', function(event) {
